@@ -82,7 +82,8 @@ main{
   margin-bottom: 1.7rem;
   
 }
-.main2 p{
+.main2 p{ 
+  animation: climbPhase 0.6s;
   color: #000;
   font-family: 'Dancing Script',sans-serif;
   font-size: 2.4rem;
@@ -94,6 +95,15 @@ main{
   margin-bottom: 1.7rem;
 
 }
+@keyframes climbPhase {
+  0% {transform: scaleX(10%) translateY(130%);}
+  20% {transform: scaleX(20%) translateY(80%);}
+  40% {transform: scaleX(30%) translateY(60%)}
+  60% {transform: scaleX(60%) translateY(30%);}
+  80% {transform: scaleX(80%) translateY(20%)}
+  100% {transform: scaleX(100%) translateY(0);}
+}
+
 #biscoitoAberto{
   max-width: 30rem;
   padding: 4.3rem 0;
